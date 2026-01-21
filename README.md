@@ -28,7 +28,7 @@ $X^{fn}_n ~~ Y^{fn}_n$ \
 $X^{fc}_1 ~~ Y^{fc}_1$ \
 $X^{fc}_2 ~~ Y^{fc}_2$ \
 $\dots$ \
-$X^{fc}_{|\mathcal{C_1}|} ~~ Y^{fc}_{|\mathcal{C_1}|}$
+$X^{fc}_{|\mathcal{C}_1|} ~~ Y^{fc}_{|\mathcal{C}_1|}$
 
 where 
 - $m$ is the number of customers, 
