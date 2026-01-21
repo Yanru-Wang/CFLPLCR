@@ -1,0 +1,149 @@
+Set parameter TimeLimit to value 7200
+Setting GBD: A two-stage implementation of the stage-of-the-art generalized Benders decomposition (GBD) approach proposed by Lin & Tian (2021).
+
+----------------- start of the first stage -----------------
+
+Iter     Best Incumbent      BestBound     Gap      Time  #VioCuts
+1                 0.000     341584.927   100.0       0.2       800
+2                 0.000     318025.841   100.0       0.5       800
+3             67033.474     280991.673    76.1       1.1       751
+4             67033.474     256986.881    73.9       1.8       557
+5             67033.474     250168.244    73.2       2.3       316
+6             67033.474     248440.051    73.0       2.6       142
+7             67033.474     247751.111    72.9       3.0        67
+8             67033.474     247670.148    72.9       3.3         6
+9             67033.474     247641.858    72.9       3.6         3
+10            67033.474     247641.619    72.9       3.9         0
+
+CPU time spent in the first stage: 4.49 sec
+Upper bound returned at the end of the first stage: 247641.619111
+Objective value of the optimal solution or the best incumbent at the end of the first stage: 67033.474394
+Number of cuts added at the end of the first stage for the initialization of the relaxed MILP problem: 982
+Termination status of the first stage: LP Optimal
+
+------------------ end of the first stage ------------------
+
+
+----------------- start of the second stage ----------------
+
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 52 physical cores, 52 logical processors, using up to 1 threads
+
+
+Warning: excessive time spent in model updates.
+Consider calling update less frequently.
+
+Optimize a model with 1784 rows, 1100 columns and 13733 nonzeros
+Model fingerprint: 0xde79b2d0
+Variable types: 800 continuous, 300 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e-09, 2e+03]
+  Objective range  [1e+01, 2e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-04, 4e+05]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Loaded user MIP start with objective 67033.5
+
+Presolve removed 801 rows and 0 columns
+Presolve time: 0.03s
+Presolved: 983 rows, 1100 columns, 11832 nonzeros
+Variable types: 800 continuous, 300 integer (300 binary)
+
+Root relaxation: objective 2.336092e+05, 74 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 233609.166    0    3 67033.4744 233609.166   248%     -    0s
+     0     0 228637.662    0   42 67033.4744 228637.662   241%     -    0s
+     0     0 228548.496    0   42 67033.4744 228548.496   241%     -    0s
+     0     2 228424.475    0   42 67033.4744 228424.475   241%     -    0s
+H  233   233                    174219.49289 216636.812  24.3%  47.6    4s
+H  234   234                    175939.84528 216636.812  23.1%  47.4    4s
+H  235   235                    176121.64066 216636.812  23.0%  47.3    4s
+H  236   236                    178348.71240 216636.812  21.5%  47.1    4s
+H  241   241                    186036.84887 216636.812  16.4%  46.4    4s
+*  242   235             174    188029.76649 216636.812  15.2%  46.2    4s
+   245   234 205956.179    4  106 188029.766 216614.629  15.2%  50.2    5s
+*  423   308             152    195644.14461 216614.629  10.7%  40.6    6s
+   521   397 200663.129   55   42 195644.145 216611.488  10.7%  41.2   10s
+   524   399 200165.868   59  112 195644.145 200978.521  2.73%  40.9   16s
+   527   401 195767.468  113  107 195644.145 200104.920  2.28%  40.7   20s
+   544   414 199301.214   18  104 195644.145 199622.433  2.03%  50.5   25s
+*  646   428              70    197508.34470 199622.433  1.07%  47.9   28s
+   672   440 198634.962   26   93 197508.345 199621.636  1.07%  49.3   30s
+*  778   416              81    197778.87425 199621.636  0.93%  48.3   31s
+*  859   411              57    197865.40402 199540.984  0.85%  47.3   32s
+   946   453 198790.171   27   92 197865.404 199404.013  0.78%  49.3   35s
+* 1099   379              55    198256.16698 199403.621  0.58%  47.9   37s
+  1242   413 199034.740   17  108 198256.167 199336.931  0.55%  48.9   40s
+  1514   509 198750.888   25  104 198256.167 199230.366  0.49%  49.9   45s
+  1784   679 198372.239   29   92 198256.167 199146.573  0.45%  50.6   50s
+  1932   753 198581.103   26   77 198256.167 199108.491  0.43%  51.6   55s
+  2198   901 198276.251   29   67 198256.167 199078.736  0.41%  51.9   60s
+H 2283   865                    198320.29363 199063.629  0.37%  52.3   62s
+H 2311   545                    198514.93823 199049.993  0.27%  52.5   63s
+  2363   560 198661.439   23  107 198514.938 199041.102  0.27%  53.1   65s
+  2450   593 198831.888   21   88 198514.938 199035.429  0.26%  53.5   70s
+  2610   634 198816.842   21   97 198514.938 199018.326  0.25%  55.0   76s
+  2733   664 198637.296   23  102 198514.938 199005.674  0.25%  55.5   80s
+  2996   737 198858.144   18  106 198514.938 198959.944  0.22%  55.6   85s
+  3187   791 198811.113   21  113 198514.938 198943.341  0.22%  56.2   90s
+  3363   825 198780.173   20   96 198514.938 198927.956  0.21%  56.5   95s
+  3622   882 198517.261   24  110 198514.938 198889.399  0.19%  56.7  100s
+  3855   898     cutoff   26      198514.938 198871.478  0.18%  57.2  105s
+  4066   924 198616.214   27   92 198514.938 198853.907  0.17%  57.3  110s
+  4374   950 198577.080   21  114 198514.938 198838.599  0.16%  57.2  115s
+  4622   974 198542.446   25  108 198514.938 198824.489  0.16%  57.4  120s
+  4937   979     cutoff   26      198514.938 198806.073  0.15%  57.5  125s
+  5138   967 198652.916   22   99 198514.938 198785.497  0.14%  57.7  131s
+  5278   966 198555.441   23   89 198514.938 198777.271  0.13%  57.9  135s
+  5559   962     cutoff   27      198514.938 198762.672  0.12%  57.8  140s
+  5842   946 198614.466   25   77 198514.938 198745.700  0.12%  58.0  145s
+  6169   938 198624.380   21   93 198514.938 198730.952  0.11%  57.8  150s
+  6453   923 198576.903   22   84 198514.938 198713.894  0.10%  57.7  156s
+  6659   917 198571.664   23  104 198514.938 198705.642  0.10%  57.6  160s
+  6957   887 198636.073   25  102 198514.938 198689.107  0.09%  57.6  165s
+  7236   818 198546.769   24   87 198514.938 198671.349  0.08%  57.6  170s
+  7571   710     cutoff   25      198514.938 198649.111  0.07%  57.4  175s
+  7914   550 198554.020   26   97 198514.938 198627.281  0.06%  57.1  180s
+  8233   335 198549.160   21   86 198514.938 198594.089  0.04%  56.8  185s
+
+Cutting planes:
+  Gomory: 5
+  Lift-and-project: 1
+  MIR: 438
+  Flow cover: 560
+  RLT: 13
+  Relax-and-lift: 9
+  Lazy constraints: 750
+
+Explored 8647 nodes (477592 simplex iterations) in 189.69 seconds (204.54 work units)
+Thread count was 1 (of 52 available processors)
+
+Solution count 10: 198515 198320 198256 ... 178349
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 1.985149382314e+05, best bound 1.985149382314e+05, gap 0.0000%
+
+User-callback calls 53429, time in user-callback 0.46 sec
+
+CPU time spent in the second stage: 189.69 sec
+The LP relaxation bound at the root node: 228424.475386
+Termination status of the second stage: OPTIMAL
+
+------------------ end of the second stage -----------------
+
+Total CPU time: 193.59 sec
+Percentage optimality gap: 0.00 %
+CPU time spent in separating the cuts: 2.45 sec
+Number of explored nodes: 8647
+Objective value of the returned solution: 198514.938231
+Optimal facility locations: [4, 19, 37, 38, 40, 55, 67, 70, 74, 86, 90, 98, 112, 116, 131, 146, 150, 164, 179, 180, 183, 186, 195, 212, 213, 216, 221, 222, 232, 249, 251, 256, 259, 272, 292, 295]
+
+@end of file

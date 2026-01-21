@@ -1,0 +1,124 @@
+Set parameter TimeLimit to value 7200
+Setting B&C+LSI: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities).
+
+----------------- start of the first stage -----------------
+
+Iter     Best Incumbent      BestBound     Gap      Time  #VioCuts
+1                 0.000     428488.225   100.0       0.1      1000
+2            249830.599     406883.145    38.6       1.5      1999
+3            316756.632     367050.666    13.7       2.6      1922
+4            321430.863     337248.664     4.7       4.1      1760
+5            329870.708     332830.737     0.9       5.4       759
+6            329870.708     332140.443     0.7       6.5       253
+7            329870.708     331966.515     0.6       7.5        79
+8            329870.708     331932.262     0.6       8.3        19
+9            329870.708     331921.867     0.6       9.1        12
+10           329870.708     331920.374     0.6       9.9         5
+11           329870.708     331919.775     0.6      10.6         4
+12           329870.708     331918.532     0.6      11.4         4
+13           329870.708     331917.402     0.6      12.2         0
+
+CPU time spent in the first stage: 13.82 sec
+Upper bound returned at the end of the first stage: 331917.401698
+Objective value of the optimal solution or the best incumbent at the end of the first stage: 329870.708345
+Number of cuts added at the end of the first stage for the initialization of the relaxed MILP problem: 1182
+Termination status of the first stage: LP Optimal
+
+------------------ end of the first stage ------------------
+
+
+----------------- start of the second stage ----------------
+
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 52 physical cores, 52 logical processors, using up to 1 threads
+
+
+Warning: excessive time spent in model updates.
+Consider calling update less frequently.
+
+Optimize a model with 2187 rows, 1100 columns and 16376 nonzeros
+Model fingerprint: 0xebe6affc
+Variable types: 1000 continuous, 100 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [3e-08, 2e+03]
+  Objective range  [1e+01, 2e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-04, 5e+05]
+
+Loaded user MIP start with objective 329871
+
+Presolve removed 1015 rows and 0 columns
+Presolve time: 0.03s
+Presolved: 1172 rows, 1100 columns, 10936 nonzeros
+Variable types: 1000 continuous, 100 integer (100 binary)
+
+Root relaxation: objective 3.319174e+05, 282 iterations, 0.01 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 331917.402    0   71 329870.708 331917.402  0.62%     -    0s
+     0     0 331847.963    0   61 329870.708 331847.963  0.60%     -    0s
+     0     0 331820.474    0   61 329870.708 331820.474  0.59%     -    0s
+     0     0 331820.474    0   59 329870.708 331820.474  0.59%     -    0s
+     0     0 331813.204    0   63 329870.708 331813.204  0.59%     -    1s
+     0     0 331805.731    0   63 329870.708 331805.731  0.59%     -    1s
+     0     0 331805.731    0   65 329870.708 331805.731  0.59%     -    1s
+     0     0 331805.731    0   66 329870.708 331805.731  0.59%     -    1s
+     0     0 331803.184    0   66 329870.708 331803.184  0.59%     -    1s
+     0     0 331793.713    0   66 329870.708 331793.713  0.58%     -    1s
+     0     2 331792.858    0   66 329870.708 331792.858  0.58%     -    2s
+   115   101 331149.112    5   54 329870.708 331636.498  0.54%  68.3    5s
+*  231   168              42    330291.03411 331612.145  0.40%  83.9    7s
+*  288   187              28    330439.07070 331607.468  0.35%  89.9    8s
+*  298   189              32    330456.23900 331607.468  0.35%  87.7    8s
+   340   201 331002.139    5   59 330456.239 331542.861  0.33%  92.7   10s
+   518   297 331016.083    9   58 330456.239 331462.482  0.30%   105   15s
+   678   343 330498.017   10   49 330456.239 331381.391  0.28%   110   20s
+   754   365 331080.732    6   69 330456.239 331348.429  0.27%   111   28s
+   755   366 330532.491   17   71 330456.239 331348.429  0.27%   111   31s
+   762   371 330698.292   10   68 330456.239 331348.429  0.27%   110   36s
+   767   374 330840.820    8   72 330456.239 331348.429  0.27%   109   40s
+   772   377 330593.587   17   73 330456.239 331348.429  0.27%   108   45s
+   794   390 330583.956   20   44 330456.239 331348.429  0.27%   115   50s
+*  835   353              46    330658.61604 331348.429  0.21%   113   52s
+   849   355 331088.382   17   58 330658.616 331348.429  0.21%   114   55s
+   933   350 331216.405   14   63 330658.616 331216.405  0.17%   119   60s
+  1045   337 330823.946   16   54 330658.616 331137.662  0.14%   122   65s
+  1204   299 330808.738   17   56 330658.616 330988.565  0.10%   122   70s
+  1323   242 330734.970   14   56 330658.616 330882.954  0.07%   121   75s
+
+Cutting planes:
+  Gomory: 5
+  Lift-and-project: 5
+  MIR: 294
+  Flow cover: 224
+  RLT: 1
+  Relax-and-lift: 1
+
+Explored 1474 nodes (174692 simplex iterations) in 78.50 seconds (93.29 work units)
+Thread count was 1 (of 52 available processors)
+
+Solution count 5: 330659 330456 330439 ... 329871
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 3.306586160430e+05, best bound 3.306586160430e+05, gap 0.0000%
+
+User-callback calls 19288, time in user-callback 0.91 sec
+
+CPU time spent in the second stage: 78.50 sec
+The LP relaxation bound at the root node: 331792.858259
+Termination status of the second stage: OPTIMAL
+
+------------------ end of the second stage -----------------
+
+Total CPU time: 90.70 sec
+Percentage optimality gap: 0.00 %
+CPU time spent in separating the cuts: 10.34 sec
+Number of explored nodes: 1474
+Objective value of the returned solution: 330658.616043
+Optimal facility locations: [6, 9, 14, 21, 22, 35, 38, 39, 40, 46, 47, 48, 50, 54, 57, 60, 63, 70, 76, 77, 78, 79, 80, 81, 84, 85, 86, 87, 89, 92]
+
+@end of file

@@ -1,0 +1,80 @@
+Set parameter TimeLimit to value 7200
+Setting sB&C+LSI: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities), with only the second stage implemented
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 52 physical cores, 52 logical processors, using up to 1 threads
+
+Optimize a model with 2000 rows, 2200 columns and 2000 nonzeros
+Model fingerprint: 0x62a07cfb
+Variable types: 2000 continuous, 200 integer (200 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 2e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [8e-05, 1e+00]
+Found heuristic solution: objective -2.02207e+15
+Presolve removed 2000 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 0 rows, 2200 columns, 0 nonzeros
+Variable types: 2000 continuous, 200 integer (200 binary)
+Found heuristic solution: objective -2.02207e+15
+
+Root relaxation: objective 8.355029e+05, 0 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 835502.913    0    - -2.022e+15 835502.913   100%     -    0s
+     0     0 799073.838    0   38 -2.022e+15 799073.838   100%     -    0s
+H    0     0                    469290.19655 799073.838  70.3%     -    0s
+     0     0 719273.881    0   88 469290.197 719273.881  53.3%     -    1s
+     0     2 718958.324    0   88 469290.197 718958.324  53.2%     -    2s
+    10    12 664848.216    5   82 469290.197 665317.077  41.8%   351    5s
+*  104    89              79    638332.07323 665317.077  4.23%  90.6    9s
+   107    88 650013.816    3  105 638332.073 665272.538  4.22%   101   10s
+*  179   126              62    642427.82228 665272.538  3.56%  72.0   11s
+*  182   125              61    642508.33357 665272.538  3.54%  71.0   12s
+   303   226 647006.836    6  100 642508.334 664826.574  3.47%  67.3   15s
+H  324   227                    643296.67571 664826.574  3.35%  64.9   16s
+*  349   245              46    643330.41547 664826.574  3.34%  61.3   16s
+H  378   218                    643871.02963 664824.480  3.25%  62.6   17s
+*  395   225              47    643904.76939 664824.480  3.25%  60.2   17s
+   513   312 644208.222   42    6 643904.769 664612.851  3.22%  64.5   20s
+   580   347 644341.771   33   88 643904.769 664097.136  3.14%  68.3   89s
+   582   348 644479.728   27  112 643904.769 647529.718  0.56%  68.1  102s
+   583   349 644382.829   28   76 643904.769 645293.269  0.22%  68.0  106s
+H  584   332                    644003.16370 645040.127  0.16%  67.9  111s
+H  586   316                    644204.10557 645031.436  0.13%  67.6  115s
+H  586   300                    644980.54759 645031.436  0.01%  67.6  115s
+*  587   286              11    645031.43613 645031.436  0.00%  67.5  115s
+
+Cutting planes:
+  Gomory: 45
+  Implied bound: 40
+  MIR: 190
+  Mixing: 3
+  Flow cover: 949
+  RLT: 58
+  Relax-and-lift: 1
+  Lazy constraints: 10
+
+Explored 587 nodes (45332 simplex iterations) in 115.67 seconds (52.92 work units)
+Thread count was 1 (of 52 available processors)
+
+Solution count 10: 645031 644981 644204 ... 642428
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 6.450314361281e+05, best bound 6.450314361281e+05, gap 0.0000%
+
+User-callback calls 15125, time in user-callback 0.57 sec
+
+Total CPU time: 115.67 sec
+Termination status: OPTIMAL
+Percentage optimality gap: 0.00 %
+Number of explored nodes: 587
+Objective value of the returned solution: 645031.436128
+The LP relaxation bound at the root node: 718958.323734
+Optimal facility locations: [5, 9, 10, 11, 18, 36, 43, 55, 56, 59, 60, 61, 66, 67, 71, 79, 80, 83, 88, 93, 94, 95, 102, 107, 108, 109, 110, 114, 116, 119, 120, 121, 126, 127, 129, 132, 139, 142, 143, 144, 146, 152, 161, 162, 164, 170, 176, 177, 178, 179, 181, 182, 184, 185, 189, 191, 192, 193, 196, 200]
+
+@end of file

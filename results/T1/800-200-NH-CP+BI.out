@@ -1,0 +1,11 @@
+Setting CP+BI: The cutting plane approach for solving the CFLPLCR based on the Benders reformulation of Lin & Tian (2021).
+Iter     Best Incumbent      BestBound     Gap      Time
+1                 0.000     340553.477   100.0       0.0
+2            151523.226     302999.956    50.0    1037.7
+3            196296.735     249762.730    21.4    7200.1
+
+Total CPU time: 7200.07 sec
+Objective value of the returned solution: 196296.735293
+Optimal facility locations: [14, 16, 23, 27, 35, 38, 48, 55, 62, 63, 77, 90, 92, 101, 102, 114, 117, 118, 119, 121, 122, 126, 131, 140, 141, 146, 149, 153, 163, 166, 169, 177, 190, 192, 196]
+
+@end of file

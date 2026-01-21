@@ -1,0 +1,10 @@
+Setting CP+LSI: The cutting plane approach for solving the CFLPLCR based on formulation (40) based on lifted submodular inequalities.
+Iter     Best Incumbent      BestBound     Gap      Time
+1                 0.000     420515.711   100.0       0.0
+2            185161.126     360189.792    48.6    7200.1
+
+Total CPU time: 7200.08 sec
+Objective value of the returned solution: 185161.126090
+Optimal facility locations: [4, 16, 44, 54, 86, 92, 97, 109, 124, 133, 135, 156, 159, 186, 187, 219, 245, 319, 321, 336, 360, 362, 370, 375]
+
+@end of file

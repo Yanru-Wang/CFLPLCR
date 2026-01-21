@@ -1,0 +1,30 @@
+Set parameter TimeLimit to value 7200
+Setting B&C+LSI: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities).
+
+----------------- start of the first stage -----------------
+
+Iter     Best Incumbent      BestBound     Gap      Time  #VioCuts
+1                 0.000     628154.384   100.0       3.4      1500
+2            158789.264     471163.347    66.3       4.4      1496
+3            181835.783     260353.607    30.2       7.9      1383
+4            212974.760     222247.903     4.2       8.8       829
+5            213384.578     217138.336     1.7       9.3       413
+6            215752.336     216016.280     0.1       9.7        92
+7            215965.281     215965.281     0.0      10.1         0
+
+CPU time spent in the first stage: 10.07 sec
+Upper bound returned at the end of the first stage: 215965.280938
+Objective value of the optimal solution or the best incumbent at the end of the first stage: 215965.280938
+Number of cuts added at the end of the first stage for the initialization of the relaxed MILP problem: 3178
+Termination status of the first stage: MIP Optimal
+
+------------------ end of the first stage ------------------
+
+Total CPU time: 10.07 sec
+Percentage optimality gap: 0.00 %
+CPU time spent in separating the cuts: 1.45 sec
+Number of explored nodes: 1
+Objective value of the returned solution: 215965.280938
+Optimal facility locations: [12, 13, 53, 79, 130, 132, 133, 148, 153, 186, 206, 208, 221, 229, 250, 268, 295, 307, 323, 349, 365, 402, 427, 429, 443, 465, 599, 606, 609, 667, 677, 687, 725, 781, 802, 819, 822, 849, 855, 876, 915, 963, 980, 1002, 1005, 1014, 1025, 1039, 1090, 1173, 1179, 1208, 1229, 1354, 1362, 1368, 1381, 1471, 1496, 1518, 1558, 1570, 1597, 1673, 1780, 1794, 1824, 1863, 1864, 1922, 1936, 1945, 1970, 1981, 1983]
+
+@end of file

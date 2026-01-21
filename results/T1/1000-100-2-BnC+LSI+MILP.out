@@ -1,0 +1,100 @@
+Set parameter TimeLimit to value 7200
+Setting B&C+LSI': The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities), where the lifted submodular inequalities are computed by using the MILP based approach that solves the MILP reformulations (E.2) of the lifting problems (43)
+
+----------------- start of the first stage -----------------
+
+Iter     Best Incumbent      BestBound     Gap      Time  #VioCuts
+1                 0.000     424651.174   100.0       0.1      1000
+2            248594.962     404534.660    38.5    3076.9      1990
+3            314895.729     366183.059    14.0    3495.2      1942
+4            324710.076     336829.921     3.6    3838.6      1516
+5            329157.017     332519.591     1.0    4113.5       589
+6            329157.017     331782.562     0.8    4340.4       160
+7            329157.017     331682.135     0.8    4566.0        65
+8            329157.017     331637.496     0.7    4785.6        25
+9            329157.017     331619.397     0.7    5006.4         7
+10           329157.017     331618.776     0.7    5222.0         0
+
+CPU time spent in the first stage: 5223.40 sec
+Upper bound returned at the end of the first stage: 331618.775915
+Objective value of the optimal solution or the best incumbent at the end of the first stage: 329157.016511
+Number of cuts added at the end of the first stage for the initialization of the relaxed MILP problem: 1324
+Termination status of the first stage: LP Optimal
+
+------------------ end of the first stage ------------------
+
+
+----------------- start of the second stage ----------------
+
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 52 physical cores, 52 logical processors, using up to 1 threads
+
+
+Warning: excessive time spent in model updates.
+Consider calling update less frequently.
+
+Optimize a model with 2329 rows, 1100 columns and 14525 nonzeros
+Model fingerprint: 0x9e841993
+Variable types: 1000 continuous, 100 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [8e-08, 2e+03]
+  Objective range  [1e+01, 2e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [4e-04, 5e+05]
+
+Loaded user MIP start with objective 329157
+
+Presolve removed 1078 rows and 0 columns
+Presolve time: 0.02s
+Presolved: 1251 rows, 1100 columns, 8836 nonzeros
+Variable types: 1000 continuous, 100 integer (100 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.3608380e+05   3.462885e+03   0.000000e+00   1118s
+     305    3.3160309e+05   0.000000e+00   0.000000e+00   1118s
+
+Root relaxation: objective 3.316031e+05, 305 iterations, 0.01 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 331603.087    0   55 329157.017 331603.087  0.74%     - 1117s
+     0     0 331603.087    0   55 329157.017 331603.087  0.74%     - 1975s
+     0     0 331528.149    0   56 329157.017 331528.149  0.72%     - 1975s
+     0     0 331512.024    0   56 329157.017 331512.024  0.72%     - 2377s
+
+Cutting planes:
+  Lift-and-project: 1
+  MIR: 21
+  Flow cover: 30
+  Lazy constraints: 1534
+
+Explored 1 nodes (482 simplex iterations) in 2377.87 seconds (0.34 work units)
+Thread count was 1 (of 52 available processors)
+
+Solution count 1: 329157 
+
+Time limit reached
+Best objective 3.291570165115e+05, best bound 3.315120238955e+05, gap 0.7155%
+
+User-callback calls 525, time in user-callback 2377.37 sec
+
+CPU time spent in the second stage: 2377.87 sec
+The LP relaxation bound at the root node: 0.000000
+Termination status of the second stage: TIME_LIMIT
+
+------------------ end of the second stage -----------------
+
+Average CPU time spent in solving a single MILP problem: 0.15 sec
+Total CPU time: 7599.87 sec
+Percentage optimality gap: 0.71 %
+CPU time spent in separating the cuts: 7597.46 sec
+Number of explored nodes: 1
+Objective value of the returned solution: 329157.016511
+Optimal facility locations: [2, 6, 8, 14, 21, 35, 38, 40, 46, 50, 54, 55, 57, 60, 63, 76, 77, 78, 79, 81, 84, 87, 89, 92, 99]
+
+@end of file

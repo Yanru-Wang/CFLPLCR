@@ -1,0 +1,86 @@
+Set parameter TimeLimit to value 7200
+Setting B&C+LSI: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities).
+
+----------------- start of the first stage -----------------
+
+Iter     Best Incumbent      BestBound     Gap      Time  #VioCuts
+1                 0.000    4140450.648   100.0       2.5     10000
+2           2666053.354    4101661.141    35.0       3.5      9994
+3           3523236.247    4010206.618    12.1      10.8      8971
+4           3799249.263    3902989.000     2.7      22.0      6145
+5           3841150.336    3853179.865     0.3      28.4      2340
+6           3845498.125    3845708.477     0.0      30.7         9
+7           3845498.125    3845695.533     0.0      31.3         0
+
+CPU time spent in the first stage: 160.25 sec
+Upper bound returned at the end of the first stage: 3845695.533417
+Objective value of the optimal solution or the best incumbent at the end of the first stage: 3845498.125228
+Number of cuts added at the end of the first stage for the initialization of the relaxed MILP problem: 11678
+Termination status of the first stage: LP Optimal
+
+------------------ end of the first stage ------------------
+
+
+----------------- start of the second stage ----------------
+
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 52 physical cores, 52 logical processors, using up to 1 threads
+
+
+Warning: excessive time spent in model updates.
+Consider calling update less frequently.
+
+Optimize a model with 21684 rows, 10200 columns and 103047 nonzeros
+Model fingerprint: 0x55e9d236
+Variable types: 10000 continuous, 200 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [2e-05, 2e+03]
+  Objective range  [1e+01, 2e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-07, 5e+06]
+
+Loaded user MIP start with objective 3.8455e+06
+
+Presolve removed 10005 rows and 0 columns
+Presolve time: 0.80s
+Presolved: 11679 rows, 10200 columns, 42047 nonzeros
+Variable types: 10000 continuous, 200 integer (200 binary)
+
+Root relaxation: objective 3.845696e+06, 2403 iterations, 0.18 seconds (0.08 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3845695.53    0    3 3845498.13 3845695.53  0.01%     -    1s
+     0     0 3845692.54    0    3 3845498.13 3845692.54  0.01%     -    1s
+*    0     0               0    3845691.4317 3845691.43  0.00%     -    1s
+
+Cutting planes:
+  Gomory: 1
+
+Explored 1 nodes (2406 simplex iterations) in 1.28 seconds (0.83 work units)
+Thread count was 1 (of 52 available processors)
+
+Solution count 2: 3.84569e+06 3.8455e+06 
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 3.845691431722e+06, best bound 3.845691431722e+06, gap 0.0000%
+
+User-callback calls 347, time in user-callback 0.01 sec
+
+CPU time spent in the second stage: 1.28 sec
+The LP relaxation bound at the root node: 3845691.431722
+Termination status of the second stage: OPTIMAL
+
+------------------ end of the second stage -----------------
+
+Total CPU time: 32.61 sec
+Percentage optimality gap: 0.00 %
+CPU time spent in separating the cuts: 1.37 sec
+Number of explored nodes: 1
+Objective value of the returned solution: 3845691.431722
+Optimal facility locations: [1, 2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 15, 18, 19, 20, 21, 23, 26, 27, 28, 30, 31, 33, 35, 36, 37, 38, 39, 40, 44, 45, 46, 48, 49, 50, 51, 53, 55, 57, 59, 60, 62, 65, 68, 69, 70, 71, 72, 73, 74, 78, 81, 84, 86, 89, 93, 96, 97, 99, 101, 102, 104, 105, 107, 109, 110, 111, 112, 113, 114, 117, 118, 119, 120, 121, 122, 126, 127, 129, 130, 131, 134, 135, 138, 141, 142, 144, 145, 146, 147, 148, 149, 151, 152, 154, 155, 156, 157, 158, 159, 162, 163, 164, 166, 167, 168, 171, 175, 177, 178, 181, 184, 186, 187, 189, 192, 193, 194, 195, 198, 199]
+
+@end of file

@@ -1,0 +1,92 @@
+Set parameter TimeLimit to value 7200
+Setting B&C+LSI: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities).
+
+----------------- start of the first stage -----------------
+
+Iter     Best Incumbent      BestBound     Gap      Time  #VioCuts
+1                 0.000    2051225.438   100.0      11.6      4999
+2            770700.710    1825898.465    57.8      17.8      4990
+3           1015348.984    1406297.654    27.8     102.9      4853
+4           1115522.367    1189914.132     6.3     157.0      3469
+5           1147811.173    1156071.084     0.7     163.3       934
+6           1151902.661    1152314.139     0.0     167.2       239
+7           1152046.366    1152055.781     0.0     169.1        35
+8           1152046.366    1152053.618     0.0     170.5         0
+
+CPU time spent in the first stage: 243.86 sec
+Upper bound returned at the end of the first stage: 1152053.617995
+Objective value of the optimal solution or the best incumbent at the end of the first stage: 1152046.365684
+Number of cuts added at the end of the first stage for the initialization of the relaxed MILP problem: 9512
+Termination status of the first stage: LP Optimal
+
+------------------ end of the first stage ------------------
+
+
+----------------- start of the second stage ----------------
+
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 52 physical cores, 52 logical processors, using up to 1 threads
+
+
+Warning: excessive time spent in model updates.
+Consider calling update less frequently.
+
+Optimize a model with 14519 rows, 7000 columns and 145176 nonzeros
+Model fingerprint: 0x6f6c1ab4
+Variable types: 5000 continuous, 2000 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [3e-05, 2e+03]
+  Objective range  [1e+01, 2e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [4e-06, 3e+06]
+
+Loaded user MIP start with objective 1.15205e+06
+
+Presolve removed 5006 rows and 0 columns
+Presolve time: 0.68s
+Presolved: 9513 rows, 7000 columns, 98176 nonzeros
+Variable types: 5000 continuous, 2000 integer (2000 binary)
+
+Root relaxation: objective 1.152054e+06, 3552 iterations, 0.13 seconds (0.07 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1152053.62    0    8 1152046.37 1152053.62  0.00%     -    1s
+     0     0 1152050.58    0    8 1152046.37 1152050.58  0.00%     -    1s
+     0     0 1152050.58    0    8 1152046.37 1152050.58  0.00%     -    1s
+     0     0 1152050.13    0    - 1152046.37 1152050.13  0.00%     -    1s
+*    0     0               0    1152049.0597 1152049.06  0.00%     -    1s
+
+Cutting planes:
+  Gomory: 9
+  Lift-and-project: 2
+  RLT: 1
+  Lazy constraints: 1
+
+Explored 1 nodes (3881 simplex iterations) in 1.23 seconds (1.15 work units)
+Thread count was 1 (of 52 available processors)
+
+Solution count 2: 1.15205e+06 1.15205e+06 
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 1.152049059701e+06, best bound 1.152049059701e+06, gap 0.0000%
+
+User-callback calls 408, time in user-callback 0.03 sec
+
+CPU time spent in the second stage: 1.23 sec
+The LP relaxation bound at the root node: 1152049.059701
+Termination status of the second stage: OPTIMAL
+
+------------------ end of the second stage -----------------
+
+Total CPU time: 171.78 sec
+Percentage optimality gap: 0.00 %
+CPU time spent in separating the cuts: 5.01 sec
+Number of explored nodes: 1
+Objective value of the returned solution: 1152049.059686
+Optimal facility locations: [5, 8, 10, 22, 28, 42, 46, 50, 51, 59, 75, 80, 83, 89, 90, 116, 125, 154, 158, 160, 184, 199, 209, 212, 217, 224, 225, 260, 271, 276, 281, 289, 297, 298, 306, 308, 318, 332, 345, 359, 362, 363, 365, 367, 374, 385, 389, 395, 405, 407, 429, 443, 445, 448, 454, 464, 465, 476, 482, 485, 486, 494, 504, 511, 514, 515, 521, 525, 527, 536, 537, 538, 550, 574, 607, 614, 617, 637, 649, 651, 670, 674, 675, 681, 684, 689, 696, 701, 738, 750, 754, 766, 770, 778, 783, 786, 788, 790, 796, 803, 820, 825, 830, 837, 844, 855, 871, 879, 886, 890, 904, 907, 919, 936, 952, 955, 968, 979, 985, 996, 1007, 1008, 1019, 1057, 1059, 1061, 1062, 1102, 1104, 1105, 1117, 1124, 1125, 1129, 1137, 1138, 1148, 1153, 1177, 1186, 1190, 1207, 1213, 1214, 1234, 1251, 1253, 1260, 1264, 1278, 1283, 1286, 1288, 1289, 1299, 1300, 1312, 1318, 1335, 1338, 1340, 1364, 1378, 1398, 1402, 1403, 1409, 1413, 1415, 1428, 1441, 1444, 1451, 1459, 1464, 1474, 1476, 1497, 1499, 1506, 1509, 1515, 1517, 1518, 1522, 1590, 1611, 1612, 1666, 1667, 1669, 1702, 1703, 1732, 1741, 1750, 1764, 1778, 1785, 1787, 1788, 1806, 1809, 1824, 1825, 1835, 1877, 1909, 1913, 1914, 1927, 1929, 1942, 1954, 1974, 1975, 1983, 1986]
+
+@end of file

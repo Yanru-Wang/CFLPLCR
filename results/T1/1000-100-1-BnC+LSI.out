@@ -1,0 +1,31 @@
+Set parameter TimeLimit to value 7200
+Setting B&C+LSI: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities).
+
+----------------- start of the first stage -----------------
+
+Iter     Best Incumbent      BestBound     Gap      Time  #VioCuts
+1                 0.000     417762.801   100.0       0.1      1000
+2            221831.119     399811.392    44.5       0.2       999
+3            301124.637     367357.016    18.0       0.3       942
+4            326729.387     339482.942     3.8       0.5       705
+5            329684.164     331998.158     0.7       0.6       346
+6            330168.057     330593.488     0.1       0.7        83
+7            330318.970     330346.477     0.0       0.7         1
+8            330340.487     330340.487     0.0       0.7         0
+
+CPU time spent in the first stage: 0.75 sec
+Upper bound returned at the end of the first stage: 330340.486710
+Objective value of the optimal solution or the best incumbent at the end of the first stage: 330340.486710
+Number of cuts added at the end of the first stage for the initialization of the relaxed MILP problem: 1960
+Termination status of the first stage: MIP Optimal
+
+------------------ end of the first stage ------------------
+
+Total CPU time: 0.75 sec
+Percentage optimality gap: 0.00 %
+CPU time spent in separating the cuts: 0.09 sec
+Number of explored nodes: 1
+Objective value of the returned solution: 330340.486710
+Optimal facility locations: [2, 3, 6, 8, 14, 21, 33, 35, 38, 39, 40, 46, 48, 50, 54, 57, 60, 63, 76, 77, 78, 81, 84, 87, 89, 92]
+
+@end of file

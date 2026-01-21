@@ -1,0 +1,79 @@
+Set parameter TimeLimit to value 7200
+Setting sB&C+LSI: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities), with only the second stage implemented
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 52 physical cores, 52 logical processors, using up to 1 threads
+
+Optimize a model with 1500 rows, 1700 columns and 1500 nonzeros
+Model fingerprint: 0x3139ab01
+Variable types: 1500 continuous, 200 integer (200 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 2e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-05, 1e+00]
+Found heuristic solution: objective -1.51628e+15
+Presolve removed 1500 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 0 rows, 1700 columns, 0 nonzeros
+Variable types: 1500 continuous, 200 integer (200 binary)
+Found heuristic solution: objective -1.51628e+15
+
+Root relaxation: objective 6.255807e+05, 0 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 625580.744    0    - -1.516e+15 625580.744   100%     -    0s
+     0     0 590459.697    0   35 -1.516e+15 590459.697   100%     -    0s
+H    0     0                    325861.68103 590459.697  81.2%     -    0s
+     0     0 520434.360    0   76 325861.681 520434.360  59.7%     -    0s
+     0     2 519946.631    0   76 325861.681 519946.631  59.6%     -    1s
+    48    50 458979.095   34   52 325861.681 477592.639  46.6%   152    5s
+*  108   105              79    453730.61885 477592.639  5.26%  80.3    5s
+H  149    91                    457653.57860 477574.854  4.35%  75.4    6s
+H  150    92                    457947.86877 477574.854  4.29%  74.9    6s
+*  151    92              39    457949.07442 477574.854  4.29%  74.5    6s
+H  193   128                    458275.97531 477570.810  4.21%  68.8    7s
+*  195   118              37    458684.89336 477570.810  4.12%  68.3    7s
+   346   203 461029.033    6   88 458684.893 477346.585  4.07%  72.2   10s
+   615   390 458768.551   39   76 458684.893 477017.412  4.00%  69.0   50s
+   617   391 459121.374   30   89 458684.893 461409.423  0.59%  68.8   58s
+   618   392 459831.237    8   82 458684.893 459831.237  0.25%  68.7   62s
+   619   393 459513.959   21   80 458684.893 459831.237  0.25%  68.5   65s
+   621   394 459361.212   13   56 458684.893 459617.002  0.20%  68.3   70s
+   629   401 459450.920   11   58 458684.893 459571.549  0.19%  71.9   75s
+*  649   385              23    458870.57479 459571.549  0.15%  70.7   76s
+H  661   360                    458984.86862 459552.054  0.12%  69.7   77s
+*  675   333              17    459323.19688 459475.661  0.03%  68.7   77s
+
+Cutting planes:
+  Gomory: 52
+  Lift-and-project: 24
+  Implied bound: 23
+  MIR: 106
+  Mixing: 2
+  Flow cover: 594
+  RLT: 15
+  Lazy constraints: 52
+
+Explored 696 nodes (48032 simplex iterations) in 78.41 seconds (42.86 work units)
+Thread count was 1 (of 52 available processors)
+
+Solution count 9: 459323 458985 458871 ... -1.51628e+15
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 4.593231968844e+05, best bound 4.593231968844e+05, gap 0.0000%
+
+User-callback calls 14017, time in user-callback 0.44 sec
+
+Total CPU time: 78.41 sec
+Termination status: OPTIMAL
+Percentage optimality gap: 0.00 %
+Number of explored nodes: 696
+Objective value of the returned solution: 459323.196884
+The LP relaxation bound at the root node: 519946.630550
+Optimal facility locations: [2, 5, 9, 10, 12, 14, 18, 19, 28, 36, 42, 44, 47, 55, 56, 60, 62, 64, 69, 71, 81, 86, 88, 89, 94, 101, 103, 104, 107, 109, 110, 118, 128, 133, 136, 137, 142, 149, 150, 151, 156, 157, 158, 166, 177, 179, 181, 186, 193, 195, 200]
+
+@end of file

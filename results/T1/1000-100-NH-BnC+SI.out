@@ -1,0 +1,138 @@
+Set parameter TimeLimit to value 7200
+Setting B&C+SI: The proposed B&C algorithm based on formulation (16) (equipped with the submodular inequalities).
+
+----------------- start of the first stage -----------------
+
+Iter     Best Incumbent      BestBound     Gap      Time  #VioCuts
+1                 0.000     417537.484   100.0       0.1      1000
+2            223197.573     394616.365    43.4       0.6      1730
+3            291093.986     357047.854    18.5       1.3      1706
+4            309610.792     329440.639     6.0       2.2      1552
+5            309610.792     320641.005     3.4       3.2      1012
+6            309610.792     318297.889     2.7       4.2       513
+7            309610.792     317433.697     2.5       5.1       215
+8            309610.792     317232.743     2.4       5.9        91
+9            309610.792     317158.382     2.4       6.6        74
+10           309610.792     317095.203     2.4       7.2        47
+11           309610.792     317081.924     2.4       7.8        24
+12           309610.792     317057.211     2.3       8.5         7
+13           309610.792     317056.847     2.3       9.0         1
+14           309610.792     317055.483     2.3       9.6         0
+
+CPU time spent in the first stage: 11.32 sec
+Upper bound returned at the end of the first stage: 317055.483421
+Objective value of the optimal solution or the best incumbent at the end of the first stage: 309610.791582
+Number of cuts added at the end of the first stage for the initialization of the relaxed MILP problem: 1119
+Termination status of the first stage: LP Optimal
+
+------------------ end of the first stage ------------------
+
+
+----------------- start of the second stage ----------------
+
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 52 physical cores, 52 logical processors, using up to 1 threads
+
+
+Warning: excessive time spent in model updates.
+Consider calling update less frequently.
+
+Optimize a model with 2123 rows, 1100 columns and 12359 nonzeros
+Model fingerprint: 0x076f79c0
+Variable types: 1000 continuous, 100 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 2e+03]
+  Objective range  [1e+01, 2e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-04, 5e+05]
+
+Loaded user MIP start with objective 309611
+
+Presolve removed 1007 rows and 0 columns
+Presolve time: 0.02s
+Presolved: 1116 rows, 1100 columns, 8047 nonzeros
+Variable types: 1000 continuous, 100 integer (100 binary)
+
+Root relaxation: objective 3.170423e+05, 343 iterations, 0.01 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 317042.271    0   74 309610.792 317042.271  2.40%     -    0s
+     0     0 316967.118    0   73 309610.792 316967.118  2.38%     -    0s
+     0     0 316938.004    0   68 309610.792 316938.004  2.37%     -    0s
+     0     0 316934.902    0   68 309610.792 316934.902  2.37%     -    0s
+     0     0 316934.396    0   68 309610.792 316934.396  2.37%     -    0s
+     0     0 316912.703    0   69 309610.792 316912.703  2.36%     -    1s
+     0     0 316881.189    0   71 309610.792 316881.189  2.35%     -    1s
+     0     2 316841.041    0   71 309610.792 316841.041  2.34%     -    1s
+*  139   137              62    309836.75214 316766.085  2.24%  55.7    4s
+   191   183 313142.254   40    9 309836.752 316750.022  2.23%  61.4    5s
+*  198   138              45    313946.11455 316750.022  0.89%  60.7    5s
+   394   274 315697.987   15   52 313946.115 316675.016  0.87%  72.6   10s
+H  516   355                    314260.02438 316651.442  0.76%  76.8   13s
+*  562   327              29    314647.14632 316644.038  0.63%  77.9   14s
+   581   339 315822.726   13   71 314647.146 316631.052  0.63%  78.7   16s
+   583   340 316036.410    6   75 314647.146 316631.052  0.63%  78.4   21s
+   588   344 314921.326   14   74 314647.146 316469.751  0.58%  77.7   26s
+   593   347 315851.382   14   74 314647.146 316378.934  0.55%  77.1   30s
+   601   352 315314.628   38   74 314647.146 316335.320  0.54%  76.1   35s
+   610   358 316280.651    5   78 314647.146 316280.651  0.52%  74.9   40s
+   629   373 315517.057   21   55 314647.146 316280.651  0.52%  82.2   45s
+*  677   344              50    315002.95790 316280.651  0.41%  81.0   48s
+   681   345 315685.486   14   72 315002.958 316278.249  0.40%  82.0   50s
+   782   374 315788.088   17   59 315002.958 315989.710  0.31%  86.3   55s
+   924   399 315496.844   21   65 315002.958 315949.478  0.30%  89.4   60s
+* 1050   394              39    315119.00469 315917.440  0.25%  91.9   63s
+  1096   383 315700.525   17   68 315119.005 315884.259  0.24%  92.3   65s
+  1191   383 315203.432   20   56 315119.005 315786.552  0.21%  93.8   70s
+  1323   359 315177.560   22   57 315119.005 315737.526  0.20%  94.0   75s
+  1471   333     cutoff   27      315119.005 315689.651  0.18%  95.1   80s
+  1605   315 315147.207   27   50 315119.005 315671.295  0.18%  95.4   85s
+  1745   317 315489.102   17   68 315119.005 315640.430  0.17%  96.0   90s
+  1926   334 315119.598   27   43 315119.005 315610.216  0.16%  95.6   95s
+  2080   339     cutoff   23      315119.005 315568.163  0.14%  95.3  100s
+  2233   334 315219.492   17   61 315119.005 315522.362  0.13%  95.1  105s
+  2404   326 315218.655   19   58 315119.005 315504.592  0.12%  94.8  110s
+  2584   313 315317.481   24   57 315119.005 315478.683  0.11%  94.3  115s
+  2780   294     cutoff   26      315119.005 315443.791  0.10%  93.9  120s
+  2955   267 315283.648   21   54 315119.005 315410.890  0.09%  93.3  125s
+  3091   231 315202.245   23   58 315119.005 315361.769  0.08%  93.7  130s
+  3271   178 315163.834   24   57 315119.005 315316.957  0.06%  93.3  135s
+  3459    74     cutoff   23      315119.005 315238.874  0.04%  93.3  140s
+
+Cutting planes:
+  Gomory: 7
+  Lift-and-project: 5
+  Implied bound: 5
+  MIR: 338
+  Flow cover: 356
+  RLT: 4
+  Lazy constraints: 168
+
+Explored 3543 nodes (327686 simplex iterations) in 141.37 seconds (172.25 work units)
+Thread count was 1 (of 52 available processors)
+
+Solution count 7: 315119 315003 314647 ... 309611
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 3.151190046916e+05, best bound 3.151190046916e+05, gap 0.0000%
+
+User-callback calls 30812, time in user-callback 0.40 sec
+
+CPU time spent in the second stage: 141.37 sec
+The LP relaxation bound at the root node: 316841.040846
+Termination status of the second stage: OPTIMAL
+
+------------------ end of the second stage -----------------
+
+Total CPU time: 151.00 sec
+Percentage optimality gap: 0.00 %
+CPU time spent in separating the cuts: 7.17 sec
+Number of explored nodes: 3543
+Objective value of the returned solution: 315119.004692
+Optimal facility locations: [6, 20, 21, 29, 30, 31, 32, 38, 39, 44, 45, 52, 54, 58, 59, 67, 70, 75, 76, 78, 81, 82, 83, 84, 85, 88, 89, 96, 99, 100]
+
+@end of file

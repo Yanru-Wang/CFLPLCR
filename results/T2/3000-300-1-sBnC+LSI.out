@@ -1,0 +1,84 @@
+Set parameter TimeLimit to value 7200
+Setting sB&C+LSI: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities), with only the second stage implemented
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 52 physical cores, 52 logical processors, using up to 1 threads
+
+Optimize a model with 3000 rows, 3300 columns and 3000 nonzeros
+Model fingerprint: 0x1f6c78d8
+Variable types: 3000 continuous, 300 integer (300 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 2e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e-05, 1e+00]
+Found heuristic solution: objective -3.00655e+15
+Presolve removed 3000 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 0 rows, 3300 columns, 0 nonzeros
+Variable types: 3000 continuous, 300 integer (300 binary)
+Found heuristic solution: objective -3.00655e+15
+
+Root relaxation: objective 1.236967e+06, 0 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1236966.91    0    - -3.007e+15 1236966.91   100%     -    0s
+     0     0 1184645.25    0   54 -3.007e+15 1184645.25   100%     -    1s
+H    0     0                    643259.61306 1184645.25  84.2%     -    1s
+     0     0 1067971.97    0  131 643259.613 1067971.97  66.0%     -    3s
+     0     2 1067632.30    0  131 643259.613 1067632.30  66.0%     -    6s
+     2     4 989841.521    1  120 643259.613 989841.521  53.9%  2412   10s
+    21    23 987925.716   12  123 643259.613 989841.521  53.9%   260   15s
+    37    39 962438.429   22  115 643259.613 989841.521  53.9%   241   20s
+   111   113 945719.169   76   65 643259.613 989841.521  53.9%   114   25s
+*  162   161             123    943695.72355 989841.521  4.89%  80.4   26s
+   244   239 951349.406   75   27 943695.724 989421.070  4.85%  71.6   30s
+*  262   174              92    951100.85162 989421.070  4.03%  67.0   30s
+   404   289 953296.172   33   94 951100.852 989239.510  4.01%  61.2   35s
+H  489   309                    951714.21829 989235.529  3.94%  59.0   38s
+   543   355 953145.510   44  131 951714.218 989220.640  3.94%  59.5  147s
+   545   356 953146.768   35  128 951714.218 957045.617  0.56%  59.3  164s
+H  545   338                    952360.99410 954390.548  0.21%  59.3  173s
+   547   340 952360.994   55   86 952360.994 954390.548  0.21%  59.1  179s
+   548   340 953255.528   28   84 952360.994 954113.690  0.18%  59.0  188s
+   549   341 954113.690    6   77 952360.994 954113.690  0.18%  58.9  191s
+   550   342 953183.992   34   77 952360.994 953989.285  0.17%  58.8  195s
+   552   343 953989.285   12   64 952360.994 953989.285  0.17%  58.5  203s
+   554   344 953776.292   12   87 952360.994 953776.292  0.15%  58.3  205s
+   561   351 953688.851   18   46 952360.994 953758.309  0.15%  69.2  210s
+*  569   336              22    953254.68707 953758.309  0.05%  69.0  213s
+H  576   308                    953656.73125 953756.751  0.01%  68.2  214s
+
+Cutting planes:
+  Gomory: 33
+  Lift-and-project: 40
+  Implied bound: 37
+  MIR: 162
+  Mixing: 3
+  Flow cover: 1103
+  RLT: 42
+  Relax-and-lift: 1
+  Lazy constraints: 79
+
+Explored 581 nodes (42026 simplex iterations) in 214.92 seconds (109.87 work units)
+Thread count was 1 (of 52 available processors)
+
+Solution count 9: 953657 953255 952361 ... -3.00655e+15
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 9.536567312507e+05, best bound 9.536567312507e+05, gap 0.0000%
+
+User-callback calls 27454, time in user-callback 0.96 sec
+
+Total CPU time: 214.92 sec
+Termination status: OPTIMAL
+Percentage optimality gap: 0.00 %
+Number of explored nodes: 581
+Objective value of the returned solution: 953656.731251
+The LP relaxation bound at the root node: 1067632.300674
+Optimal facility locations: [1, 6, 7, 13, 14, 22, 25, 28, 31, 33, 35, 36, 41, 44, 48, 51, 53, 54, 63, 65, 67, 68, 69, 77, 87, 89, 90, 93, 96, 103, 105, 107, 108, 110, 115, 117, 121, 132, 139, 141, 142, 143, 144, 148, 150, 151, 152, 153, 155, 158, 163, 168, 178, 185, 189, 195, 206, 210, 214, 216, 219, 220, 227, 241, 245, 246, 250, 252, 255, 258, 259, 263, 266, 268, 270, 272, 274, 278, 281, 285, 286, 287, 289, 291, 293, 294, 300]
+
+@end of file

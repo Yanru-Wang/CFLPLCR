@@ -1,0 +1,12 @@
+Setting iB&C+LSI: Solve the CFLPJLCR by the iterative approach in Algorithm 1 in Appendix H of the online supplement, in which the CFLPLCR subproblems are solved by the proposed B&C algorithm based on the lifted submodular inequalities.
+
+Iter     Best Incumbent        IterObj      Time      GammaChgs
+1             18617.352      18617.352      1.84             37
+2             18640.705      18640.705      3.54             21
+3             18667.477      18667.477      4.42              0
+
+Total CPU time: 4.42 sec
+Number of iteration: 3
+Termination status: Fixed Point
+
+@end of file

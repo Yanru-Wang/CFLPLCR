@@ -1,0 +1,94 @@
+Set parameter TimeLimit to value 7200
+Setting B&C+LSI: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities).
+
+----------------- start of the first stage -----------------
+
+Iter     Best Incumbent      BestBound     Gap      Time  #VioCuts
+1                 0.000    1236966.908   100.0       0.9      3000
+2            643259.613    1184645.253    45.7       1.3      2999
+3            855910.346    1069052.426    19.9       4.9      2894
+4            941423.869     982255.946     4.2       8.6      1992
+5            951883.021     956045.401     0.4      10.1       686
+6            951950.672     953725.500     0.2      10.5        54
+7            953034.076     953683.645     0.1      10.7         0
+
+CPU time spent in the first stage: 17.98 sec
+Upper bound returned at the end of the first stage: 953683.645466
+Objective value of the optimal solution or the best incumbent at the end of the first stage: 953034.075861
+Number of cuts added at the end of the first stage for the initialization of the relaxed MILP problem: 5036
+Termination status of the first stage: LP Optimal
+
+------------------ end of the first stage ------------------
+
+
+----------------- start of the second stage ----------------
+
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 52 physical cores, 52 logical processors, using up to 1 threads
+
+
+Warning: excessive time spent in model updates.
+Consider calling update less frequently.
+
+Optimize a model with 8043 rows, 3300 columns and 47358 nonzeros
+Model fingerprint: 0xf24cb7d2
+Variable types: 3000 continuous, 300 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [4e-05, 2e+03]
+  Objective range  [1e+01, 2e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-05, 2e+06]
+
+Loaded user MIP start with objective 953034
+
+Presolve removed 3006 rows and 0 columns
+Presolve time: 0.07s
+Presolved: 5037 rows, 3300 columns, 24558 nonzeros
+Variable types: 3000 continuous, 300 integer (300 binary)
+
+Root relaxation: objective 9.536836e+05, 1816 iterations, 0.06 seconds (0.04 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 953683.645    0    7 953034.076 953683.645  0.07%     -    0s
+     0     0 953683.558    0    - 953034.076 953683.558  0.07%     -    0s
+     0     0 953678.318    0    8 953034.076 953678.318  0.07%     -    0s
+H    0     0                    953656.73125 953667.879  0.00%     -    0s
+     0     0     cutoff    0      953656.731 953656.731  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 8
+  Lift-and-project: 2
+  Cover: 1
+  MIR: 2
+  Flow cover: 7
+  RLT: 24
+  Lazy constraints: 2
+
+Explored 1 nodes (1824 simplex iterations) in 0.28 seconds (0.25 work units)
+Thread count was 1 (of 52 available processors)
+
+Solution count 2: 953657 953034 
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 9.536567312507e+05, best bound 9.536567312507e+05, gap 0.0000%
+
+User-callback calls 276, time in user-callback 0.00 sec
+
+CPU time spent in the second stage: 0.28 sec
+The LP relaxation bound at the root node: 953656.731251
+Termination status of the second stage: OPTIMAL
+
+------------------ end of the second stage -----------------
+
+Total CPU time: 10.99 sec
+Percentage optimality gap: 0.00 %
+CPU time spent in separating the cuts: 0.46 sec
+Number of explored nodes: 1
+Objective value of the returned solution: 953656.731251
+Optimal facility locations: [1, 6, 7, 13, 14, 22, 25, 28, 31, 33, 35, 36, 41, 44, 48, 51, 53, 54, 63, 65, 67, 68, 69, 77, 87, 89, 90, 93, 96, 103, 105, 107, 108, 110, 115, 117, 121, 132, 139, 141, 142, 143, 144, 148, 150, 151, 152, 153, 155, 158, 163, 168, 178, 185, 189, 195, 206, 210, 214, 216, 219, 220, 227, 241, 245, 246, 250, 252, 255, 258, 259, 263, 266, 268, 270, 272, 274, 278, 281, 285, 286, 287, 289, 291, 293, 294, 300]
+
+@end of file

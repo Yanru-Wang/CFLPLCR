@@ -1,0 +1,74 @@
+Set parameter TimeLimit to value 7200
+Setting sB&C+LSI: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities), with only the second stage implemented
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "CentOS Linux 7 (Core)")
+
+CPU model: Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 52 physical cores, 52 logical processors, using up to 1 threads
+
+Optimize a model with 5000 rows, 5100 columns and 5000 nonzeros
+Model fingerprint: 0x9cea7eaa
+Variable types: 5000 continuous, 100 integer (100 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+01, 2e+03]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-06, 1e+00]
+Found heuristic solution: objective -5.00371e+15
+Presolve removed 5000 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 0 rows, 5100 columns, 0 nonzeros
+Variable types: 5000 continuous, 100 integer (100 binary)
+
+Root relaxation: objective 2.046537e+06, 0 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2046537.27    0    - -5.004e+15 2046537.27   100%     -    0s
+     0     0 2027650.56    0   20 -5.004e+15 2027650.56   100%     -    0s
+     0     0 2027254.83    0   20 -5.004e+15 2027254.83   100%     -    0s
+H    0     0                    1215072.3660 2027104.42  66.8%     -    1s
+     0     2 1978400.69    0   34 1215072.37 1978400.69  62.8%     -    2s
+    16    18 1974093.63   12   21 1215072.37 1977549.19  62.8%  41.6    5s
+*   70    70              55    1876263.4087 1977549.19  5.40%   112    8s
+    90    86 1906082.08   19   16 1876263.41 1977543.85  5.40%   138   10s
+*  113    62              37    1902791.7220 1977543.85  3.93%   121   10s
+*  156    95              36    1904071.3611 1977450.19  3.85%   120   13s
+   160    93 1905114.35    4   39 1904071.36 1977210.88  3.84%   159   16s
+H  162    89                    1904366.3693 1977210.88  3.83%   158   16s
+   183    88 1907556.52    1   39 1904366.37 1976998.25  3.81%   197   20s
+   190    81     cutoff    9      1904366.37 1974829.08  3.70%   264   25s
+   202    69     cutoff   17      1904366.37 1971511.70  3.53%   332   30s
+   293    83 1905006.07   11   31 1904366.37 1908289.18  0.21%   275   35s
+   489   154     cutoff    9      1904366.37 1906674.22  0.12%   180   40s
+H  616   202                    1904372.1908 1906532.02  0.11%   153   43s
+   665   217 1904798.90   11   26 1904372.19 1906473.72  0.11%   144   45s
+   862   225 1904605.72   13   19 1904372.19 1905982.89  0.08%   123   50s
+  1077   232     cutoff   11      1904372.19 1905467.40  0.06%   107   55s
+* 1174   177              28    1904658.8449 1905416.26  0.04%   101   56s
+  1314   167 1904757.84   18   16 1904658.84 1905212.67  0.03%  94.9   60s
+H 1507    41                    1904720.7139 1904880.81  0.01%  87.7   64s
+  1536    24     cutoff   21      1904720.71 1904796.92  0.00%  86.4   65s
+
+Cutting planes:
+  Lazy constraints: 14723
+
+Explored 1561 nodes (133144 simplex iterations) in 65.39 seconds (71.58 work units)
+Thread count was 1 (of 52 available processors)
+
+Solution count 9: 1.90472e+06 1.90466e+06 1.90437e+06 ... -5.00371e+15
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 1.904720713939e+06, best bound 1.904720713939e+06, gap 0.0000%
+
+User-callback calls 7567, time in user-callback 0.71 sec
+
+Total CPU time: 65.39 sec
+Termination status: OPTIMAL
+Percentage optimality gap: 0.00 %
+Number of explored nodes: 1561
+Objective value of the returned solution: 1904720.713939
+The LP relaxation bound at the root node: 1978400.690419
+Optimal facility locations: [1, 5, 7, 9, 10, 12, 14, 15, 17, 18, 19, 20, 22, 26, 29, 32, 38, 39, 41, 42, 43, 46, 48, 49, 50, 52, 53, 54, 55, 56, 58, 59, 60, 61, 63, 64, 65, 67, 68, 69, 70, 71, 72, 75, 76, 77, 78, 81, 82, 85, 86, 88, 91, 92, 98, 99]
+
+@end of file

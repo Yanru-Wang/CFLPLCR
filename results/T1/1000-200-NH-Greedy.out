@@ -1,0 +1,7 @@
+Setting Greedy: The greedy algorithm.
+
+Total CPU time: 1.11 sec
+Objective value of the returned solution: 267324.673066
+Optimal facility locations: [6, 7, 12, 14, 18, 20, 21, 23, 33, 37, 44, 46, 49, 59, 63, 64, 67, 68, 69, 82, 85, 88, 91, 92, 96, 115, 118, 121, 129, 133, 135, 141, 147, 155, 159, 162, 163, 170, 171, 172, 176, 178, 181, 197, 198]
+
+@end of file
