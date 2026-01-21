@@ -16,7 +16,7 @@ The testsets T1 and T2 contain the competitive facility location problem with li
 
 Format of the instance files:
 
-![](./format.png)
+![format](./format.png)
 
 where 
 - $m$ is the number of customers, 
