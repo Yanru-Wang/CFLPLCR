@@ -16,19 +16,7 @@ The testsets T1 and T2 contain the competitive facility location problem with li
 
 Format of the instance files:
 
-$m ~~ n ~~ |\mathcal{C}_1| ~~ f$\
-$b_1 ~~ X^c_1 ~~ Y^c_1 ~~ \gamma_1 ~~ \gamma_{11}$ \
-$b_2 ~~ X^c_2 ~~ Y^c_2 ~~ \gamma_2 ~~ \gamma_{21}$ \
-$\dots$ \
-$b_m ~~ X^c_m ~~ Y^c_m ~~ \gamma_m ~~ \gamma_{m1}$ \
-$X^{fn}_1 ~~ Y^{fn}_1$ \
-$X^{fn}_2 ~~ Y^{fn}_2$ \
-$\dots$ \
-$X^{fn}_n ~~ Y^{fn}_n$ \
-$X^{fc}_1 ~~ Y^{fc}_1$ \
-$X^{fc}_2 ~~ Y^{fc}_2$ \
-$\dots$ \
-$X^{fc}_{|\mathcal{C}_1|} ~~ Y^{fc}_{|\mathcal{C}_1|}$
+![Alt text](image.png)
 
 where 
 - $m$ is the number of customers, 
