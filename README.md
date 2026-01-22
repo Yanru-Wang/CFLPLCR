@@ -15,21 +15,11 @@ This repository contains the instances of testsets T1 and T2, and the detailed r
 The testsets T1 and T2 contain the competitive facility location problem with limited choice rule (CFLPLCR) instances where a newcomer company selects facility locations while competing with the existing open facilities of a single existing competitor.
 
 Format of the instance files:
+- number of customers $m$, the number of potential facility locations considered by the newcomer $n$, number of competitor's opened facilities $|\mathcal{C}_1|$, fixed cost per newcomer facility $f$
+- for each customer $i \in [m]$: buying power of the customer $b_i$, coordinates of the customer $(X^c_i, Y^c_i)$, maximum numbers of facilities of the newcomer company and competitor's open facilities, respectively, that will be considered by customer $\gamma_i$ and $\gamma_{i1}$ 
+- for each facility location $j \in [n]$ of the newcomer: coordinates of the facility location $(X^{fn}_j, Y^{fn}_j)$
+- for each facility $j \in [n]$ of the competitior: coordinates of the facility $(X^{fc}_j, Y^{fc}_j)$
 
-<img src="format.png" width="25%">
-
-
-where 
-- $m$ is the number of customers, 
-- $n$ is the number of potential facility locations considered by the newcomer, 
-- $|\mathcal{C}_1|$ is the number of competitor's opened facilities,  
-- $f$ is the fixed cost per newcomer facility,
-- for each customer $i \in [m]$ in a row, 
-    - $b_i$ is the buying power of customer $i \in [m]$, 
-    - $(X^c_i, Y^c_i)$ are the coordinates of customer $i$, 
-    - $\gamma_i$ and $\gamma_{i1}$ are the maximum numbers of facilities of the newcomer company and competitor's open facilities, respectively, that will be considered by customer $i \in [m]$;
-- for each facility location $j \in [n]$ of the newcomer, $(X^{fn}_j, Y^{fn}_j)$ are its coordinates,
-- for each facility $j \in \mathcal{C}_1$ of the competitior, $(X^{fc}_j, Y^{fc}_j)$ are its coordinates.
 
 For the CFLPJLCR instances, only $\gamma_i$ is presented, which denotes the maximum numbers of facilities that that will be considered by customer $i \in [m]$.
 
