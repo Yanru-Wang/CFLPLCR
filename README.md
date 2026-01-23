@@ -55,7 +55,7 @@ The following algorithms are compared in the computational experiments:
 - **CP+B&C**: Solving the CFLPLCR by the CP approach of formulation (40), where the lifted submodular inequalities (40a)–(40b) are generated in each iteration and the master problem is solved again as an MILP problem.
 
 Besides, the following two algorithms for the competitive facility location problem with joint limited choice rule (CFLPJLCR) are compared in the computational experiments:
-- **Gurobi**: Solving the MILP formulation (H.6) (see Appendix H of the online supplement) of the CFLPJLCR by the B&C algorithm of Gurobi.
+- **Gurobi**: Solving the MILP formulation (H.6) of the CFLPJLCR by the B&C algorithm of Gurobi (see Appendix H of the online supplement).
 - **iB&C+LSI**: Solving the CFLPJLCR by the iterative approach in Algorithm 1 in the online supplement, in which the CFLPLCR subproblems are solved by the proposed B&C algorithm based on the lifted submodular inequalities.
 
 ### Results
