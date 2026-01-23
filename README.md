@@ -6,7 +6,7 @@
 
 ---
 
-This repository contains the instances of testsets T1 and T2, and the detailed results of the computational experiments conducted for the paper "An efficient branch-and-cut approach for large-scale competitive facility location problems with limited choice rule". 
+This repository contains the instances and the detailed results of the computational experiments conducted for the paper "An efficient branch-and-cut approach for large-scale competitive facility location problems with limited choice rule". 
 
 #### [https://arxiv.org/abs/2406.05775](https://arxiv.org/abs/2406.05775)
 
@@ -27,14 +27,14 @@ Format of the instance files:
 where 
 - $m$ is the number of customers, 
 - $n$ is the number of potential facility locations considered by the newcomer, 
-- $|\mathcal{C}_1|$ is the number of competitor's opened facilities,  
+- $|\mathcal{C}_1|$ is the number of the competitor's opened facilities,  
 - $f$ is the fixed cost per newcomer facility,
 - for each customer $i \in [m]$ in a row, 
     - $b_i$ is the buying power of customer $i \in [m]$, 
     - $(X^c_i, Y^c_i)$ are the coordinates of customer $i$, 
     - $\gamma_i$ and $\gamma_{i1}$ are the maximum numbers of facilities of the newcomer company and competitor's open facilities, respectively, that will be considered by customer $i \in [m]$;
-- for each facility location $j \in [n]$ of the newcomer, $(X^{fn}_j, Y^{fn}_j)$ are its coordinates,
-- for each facility $j \in \mathcal{C}_1$ of the competitior, $(X^{fc}_j, Y^{fc}_j)$ are its coordinates.
+- for each facility location $j \in [n]$ of the newcomer, $(X^{fn}_j, ~~Y^{fn}_j)$ are its coordinates,
+- for each facility $j \in \mathcal{C}_1$ of the competitior, $(X^{fc}_j, ~~Y^{fc}_j)$ are its coordinates.
 
 
 
