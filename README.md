@@ -83,7 +83,7 @@ The CSV file contains the following columns:
 - **N**: The number of explored nodes;
 - **v**: The objective value of the optimal solution or the best incumbent of the instance;
 - **UB^1** and **LB^1**: The upper bound and lower bound of the optimal value returned at the end of the first stage;
-- **LPG%**: The percentage LP gap defined by (UB^1 - v) / UB^1 $\times$ 100%, where v = $\max\{v_{\text{SI}}, v_{\text{LSI}}\}$ denotes the best objective value of incumbents under settings B&C+SI and B&C+LSI;
+- **LPG%**: The percentage LP gap defined by (UB^1 - v) / UB^1 $\times$ 100%, where v denotes the best objective value of incumbents;
 - **C^1**: The number of cuts added at the end of the first stage for the initialization of the relaxed MILP problem of (40);
 - **UB^2**: The upper bound obtained at the root node of Gurobi (in the second stage);
 - **T^MILP**: The average CPU time in seconds spent in solving a single MILP problem; 
