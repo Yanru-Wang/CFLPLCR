@@ -22,7 +22,7 @@ Format of the instance files:
 
 - Row $m+2$ to Row $m+n+1$: $~~X^{fn}_j ~~ Y^{fn}_j$ 
 
-- Row $m+n+2$ to Row $m+n+|\mathcal{C}_1| + 1$:  $~~X^{fc}_j ~~ Y^{fc}_j$
+- Row $m+n+2$ to Row $m+n+|\mathcal{C}_1|+ 1$:  $~~X^{fc}_j ~~ Y^{fc}_j$
 
 where 
 - $m$ is the number of customers, 
@@ -60,7 +60,7 @@ Besides, the following two algorithms for the competitive facility location prob
 
 ### Results
 
-The log files of the above algorithms for the instances are provided in the directory **Results**.
+The log files of the above algorithms for the instances are provided in the directory **results**.
 
 
 ### CSV Data Details
