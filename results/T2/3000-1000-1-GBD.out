@@ -1,5 +1,5 @@
 Set parameter TimeLimit to value 7200
-Setting GBD: A two-stage implementation of the stage-of-the-art generalized Benders decomposition (GBD) approach proposed by Lin & Tian (2021).
+Setting GBD: A two-stage implementation of the state-of-the-art generalized Benders decomposition (GBD) approach proposed by Lin & Tian (2021).
 
 ----------------- start of the first stage -----------------
 
