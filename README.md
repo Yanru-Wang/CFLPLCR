@@ -31,10 +31,10 @@ where
 - $f$ is the fixed cost per newcomer facility,
 - for each customer $i \in [m]$ in a row, 
     - $b_i$ is the buying power of customer $i \in [m]$, 
-    - $(X^c_i, Y^c_i)$ are the coordinates of customer $i$, 
+    - $(X^c_i,~Y^c_i)$ are the coordinates of customer $i$, 
     - $\gamma_i$ and $\gamma_{i1}$ are the maximum numbers of facilities of the newcomer company and competitor's open facilities, respectively, that will be considered by customer $i \in [m]$;
-- for each facility location $j \in [n]$ of the newcomer, $(X^{fn}_j, ~~Y^{fn}_j)$ are its coordinates,
-- for each facility $j \in \mathcal{C}_1$ of the competitior, $(X^{fc}_j, ~~Y^{fc}_j)$ are its coordinates.
+- for each facility location $j \in [n]$ of the newcomer, $(X^{fn}_j, ~Y^{fn}_j)$ are its coordinates,
+- for each facility $j \in \mathcal{C}_1$ of the competitior, $(X^{fc}_j, ~Y^{fc}_j)$ are its coordinates.
 
 
 
@@ -55,8 +55,8 @@ The following algorithms are compared in the computational experiments:
 - **CP+B&C**: Solving the CFLPLCR by the CP approach of formulation (40), where the lifted submodular inequalities (40a)–(40b) are generated in each iteration and the master problem is solved again as an MILP problem.
 
 Besides, the following two algorithms for the competitive facility location problem with joint limited choice rule (CFLPJLCR) are compared in the computational experiments:
-- **iB&C+LSI**: Solving the CFLPJLCR by the iterative approach in Algorithm 1 in the online supplement, in which the CFLPLCR subproblems are solved by the proposed B&C algorithm based on the lifted submodular inequalities.
 - **Gurobi**: Solving the MILP formulation (H.6) (see Appendix H of the online supplement) of the CFLPJLCR by the B&C algorithm of Gurobi.
+- **iB&C+LSI**: Solving the CFLPJLCR by the iterative approach in Algorithm 1 in the online supplement, in which the CFLPLCR subproblems are solved by the proposed B&C algorithm based on the lifted submodular inequalities.
 
 ### Results
 
