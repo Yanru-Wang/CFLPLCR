@@ -47,7 +47,7 @@ The following algorithms are compared in the computational experiments:
 
 - **B&C+SI**: The proposed B&C algorithm based on formulation (16) (equipped with the submodular inequalities).
 - **B&C+LSI**: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities).
-- **GBD**: A two-stage implementation of the stage-of-the-art generalized Benders decomposition (GBD) approach proposed by Lin & Tian (2021).
+- **GBD**: A two-stage implementation of the state-of-the-art generalized Benders decomposition (GBD) approach proposed by Lin & Tian (2021).
 - **sB&C+LSI**: The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities), with only the second stage implemented.
 - **Greedy**: The greedy algorithm for the CFLPLCR (see Appendix A of the online supplement).
 - **B&C+LSI+MILP** (i.e., B&C+LSI'): The proposed B&C algorithm based on formulation (40) (equipped with the lifted submodular inequalities), where the lifted submodular inequalities are computed by using the MILP based approach that solves the MILP reformulations (E.2) in Appendix E of the online supplement of the lifting problems (43).
