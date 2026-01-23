@@ -79,7 +79,7 @@ The CSV file contains the following columns:
 #### Instance Results
 
 - **T(G%)**: Total CPU time in seconds, and if the instance cannot be solved to optimality within the given time limit, we report the percentage optimality gap, computed as (UB − LB) / UB $\times$ 100%, where UB and LB denote the upper bound and the lower bound obtained at the end of the time limit;
-- **TC**: Time in seconds spent in separating the cuts;
+- **CT**: Time in seconds spent in separating the cuts;
 - **N**: The number of explored nodes;
 - **v**: The objective value of the optimal solution or the best incumbent of the instance;
 - **UB^1** and **LB^1**: The upper bound and lower bound of the optimal value returned at the end of the first stage;
