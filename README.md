@@ -89,4 +89,4 @@ The CSV file contains the following columns:
 - **T^MILP**: The average CPU time in seconds spent in solving a single MILP problem; 
 - **It**: The number of iterations (in the CP approach for the CFLPLCR or in the iterative approach for the CLFPJLCR).
 
-The `--` under columns T(G%) and v for settings CP+LSI and CP+BI denote that the instance cannot be solved to optimality within the given time limit.
+The `--` under columns T(G%) and v for settings CP+LSI and CP+BI denotes that the instance cannot be solved to optimality within the given time limit.
