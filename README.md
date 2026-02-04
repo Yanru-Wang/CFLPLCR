@@ -38,7 +38,7 @@ where
 
 
 
-For the CFLPJLCR instances, only $\gamma_i$ is presented, which denotes the maximum numbers of facilities that that will be considered by customer $i \in [m]$.
+For the CFLPJLCR instances, only $\gamma_i$ is presented, which denotes the maximum numbers of facilities that will be considered by customer $i \in [m]$.
 
 
 ### Algorithms 
