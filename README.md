@@ -6,7 +6,7 @@
 
 ---
 
-This repository contains the instances and the detailed results of the computational experiments conducted for the paper "An efficient branch-and-cut approach for large-scale competitive facility location problems with limited choice rule". 
+This repository contains the online supplement, and the instances and the detailed results of the computational experiments conducted for the paper "An efficient branch-and-cut approach for large-scale competitive facility location problems with limited choice rule". 
 
 #### [https://arxiv.org/abs/2406.05775](https://arxiv.org/abs/2406.05775)
 
